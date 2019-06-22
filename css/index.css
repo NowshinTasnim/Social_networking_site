@@ -1,0 +1,213 @@
+*{margin:0px;padding: 0px;font-family:"arial";font-size:12px;}
+.fix{overflow:hidden;}
+body{
+	height: 657px;
+	width:auto;
+}
+.upper{
+	background-color: #007E33; 
+	width:100%; 
+	height: 80px; 
+	margin: 0px;
+}
+.logo{
+	border:3px solid #00943C;
+	width: 230px;
+	height: 75px; 
+	margin-left: 50px; 
+	margin-top: 5px; 
+	float:left;
+}
+.logo>img{
+	width: 100%;
+	height:100%;
+	animation:lp 10s 1;	
+}
+.topright{
+	float:right; 
+	width:940px;
+}
+.label{
+	margin-top: 14px; 
+	float:right;
+	width: 550px;
+}
+.email{
+	color:white; 
+	margin-right: 475px; 
+	float:right;
+	width: 74px;
+}
+.pass{ 
+	color:white; 
+	margin-right:325px;
+	margin-top: -14px;
+	float:right;
+	width:70px;
+	
+}
+.label1{
+	margin-top: 2px;
+	width: 575px;
+	float:right;
+}
+.emailtext{ 
+	color:white; 
+	margin-right: 449px; 
+	float:right;
+	width: 126px;
+}
+.passtext{ 
+	color:white; 
+	margin-right: 260px;
+	margin-top: -18px;
+	float:right;
+	width: 170px;
+}
+.bt_log{
+	width: 60px; 
+	background-color:white; 
+	color:#007E33;
+	font-weight:bold; 
+	float:right; 
+	margin-right: 200px;
+	margin-top: -18px;
+}
+
+.bt_log:hover{
+	background-color:#007E33;
+	color:white;
+}
+
+.not_matched {
+    margin-top: -15px;
+    float: right;
+    margin-right: 30px;
+}
+
+.label2{
+	float:right;
+	margin-top: 6px;
+	width: 402px;
+}
+
+.remem{
+	float:left;
+	margin-left: -170px;
+	width: 96px;
+}
+.remem>label{
+	color:white;
+}
+.frgtpass{
+	width: 110px;
+	margin-right: 278px;
+	float:right;
+}
+.frgtpass>a{
+	font-size:10px;
+	font-family:"arial";
+	font-weight:bold;
+	text-decoration:none;
+	color:white;
+}
+.down{
+	margin-top: 15px;
+	margin-left: 50px;
+	height: 548px;
+}
+.dleft{
+	margin-top: 30px;
+	width: 600px;
+	float:left;
+	height: 400px;
+}
+.slider-wrapper{
+	margin-top: 36px;
+}
+.dright{
+	margin-right: 70px;
+	margin-top: 2px;
+	float:right;
+	width: 518px;
+	
+}
+.hvnac{
+	font-size: 20px;
+	font-weight:bold;
+	color:#007E33;
+}
+.sgup{
+	font-size: 22px;;
+	font-weight:bold;
+	color:#007E33;
+}
+.sign_form{
+	font-weight:bold;
+	color:#007E33;
+	margin-top: 10px;
+}
+.textleft{
+	width: 135px;
+	text-align:left;
+	float:left;
+	height:32px;
+	font-size:14px;
+	font-weight:bold;
+}
+.textright{
+	margin-top: -32px; 
+	width: 342px;
+	margin-right: 42px;
+	text-align:left;
+	float:right;
+	height: 32px;
+	font-weight:bold;
+}
+
+.propic_up{ 
+	background-color:white; 
+	color:#007E33;
+	font-weight:bold;
+	width: 167px;
+}
+.textleft1{
+	float:left;
+	height: 18px;
+	text-align:left;
+}
+.textleft1>a{
+	text-decoration:none;
+	font-weight:bold;
+	color: #007E33;
+}
+.textleft2{
+	margin-top: 2px;
+	margin-right: 124px;
+	float:left;
+	height: 32px;
+	text-align:left;
+}
+.textleft2>label{
+	font-size:14px;
+}
+.textright1{
+	float:right;
+	margin-right: 325px;
+	width: 70px;
+}
+.btnsignup{
+	
+	width: 70px;
+	padding: 2px 3px 2px 3px;
+	background-color:white; 
+	color:#007E33;
+	font-weight:bold; 
+	border:2px solid #007E33;
+}
+
+@-webkit-keyframes lp{
+	0%{opacity:1;}
+	50%{opacity:0;}
+	100%{opacity:1;}
+}

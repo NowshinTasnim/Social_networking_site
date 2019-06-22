@@ -1,0 +1,43 @@
+*{margin:0px;padding: 0px;font-family:"arial";font-size:12px;}
+
+.left{
+	height: 100%;
+	margin-top: 10px;
+	margin-left: 30px;
+	width:220px;
+	position:fixed;
+	border-right: 1px solid #007E33;
+}
+.pro_pic_side{
+	float: left;
+	height:100px;
+	width:100px;
+}
+.name{
+	float:right;
+	margin-top:35px;
+	margin-right:45px;
+}
+.first_name{
+	font-weight:bold;
+	font-size: 16px;
+}
+
+.last_name{
+	font-weight:bold;
+	font-size: 16px;
+}
+
+.side_nav{
+	margin-top: 120px;
+}
+.side_nav>li{
+	list-style:auto;
+	margin-bottom:10px;;
+}
+.side_nav>li>a{
+	text-decoration:none;
+	color:black;
+	font-weight: bold;
+	font-size: 14px;
+}

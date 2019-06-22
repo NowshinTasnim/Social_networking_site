@@ -1,0 +1,10 @@
+*{margin:0px;padding: 0px;font-family:"arial";font-size:12px;}
+.fix{overflow:hidden;}
+body{
+	height: 600px;
+}
+
+.middle_area{
+	margin-left: 260px;
+	margin-top: 10px;
+}

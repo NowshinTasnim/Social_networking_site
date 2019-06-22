@@ -1,0 +1,15 @@
+*{margin:0px;padding: 0px;font-family:"arial";font-size:12px;}
+.footer{
+	background-color: #007E33;
+	height: 14px;
+	width:100%;
+	clear:both;
+}
+.footer>p{
+	color: white;
+}
+.footer>p>a{
+	text-decoration:none;
+	font-weight:bold;
+	color: white;
+}
