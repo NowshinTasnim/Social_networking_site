@@ -1,4 +1,4 @@
-*{margin:0px;padding: 0px;color: #007E33;font-family:"arial";font-size:20px;}
+*{margin:0px;padding: 0px;color: #007E33;font-family:"arial";font-size:20px;letter-spacing: .1rem;}
 .fix{overflow:hidden;}
 body{
 	height: 600px;
@@ -39,8 +39,9 @@ body{
 }
 .middledown>form>label{
 	float:left;
-	width:150px;
-	margin-left:500px;
+	width:160px;
+	margin-left:470px;
+	margin-top: 4px;
 }
 .middledown>form>input
 {
@@ -49,7 +50,8 @@ body{
 }
 .propic_up
 {
-	margin-right: 446px;
+	margin-right: 390px;
+	margin-top: 2px;
 }
 .btnupload
 {

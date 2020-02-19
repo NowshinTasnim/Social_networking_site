@@ -1,15 +1,18 @@
-*{margin:0px;padding: 0px;font-family:"arial";font-size:12px;}
+*{margin:0px;padding: 0px;font-family:"arial";}
 .footer{
 	background-color: #007E33;
 	height: 14px;
 	width:100%;
 	clear:both;
+	font-size:12px;
 }
 .footer>p{
 	color: white;
+	font-size:12px;
 }
 .footer>p>a{
 	text-decoration:none;
 	font-weight:bold;
 	color: white;
+	font-size:12px;
 }

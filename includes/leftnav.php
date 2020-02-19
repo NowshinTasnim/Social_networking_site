@@ -27,7 +27,6 @@
 			</div>
 			<ul class='side_nav fix'>
 				<li><a href='home.php'>Newsfeed</a></li>
-				<li><a href='message.php'>Messenger</a></li>
 			</ul>
 		</div>
 	";

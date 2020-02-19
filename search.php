@@ -10,6 +10,8 @@
 	$uname = $_SESSION['username'];
 	$email = $_SESSION['useremail'];
 	
+	$dest = "search.php";
+	
 	$posts = "";
 	if(isset($_POST['search']))
 	{
@@ -39,27 +41,60 @@
 							<div class='search_num fix'>".$num_search_result." matches found.</div>
 						</div>
 					";
-					
 					while($search_result = mysqli_fetch_array($get_search_result))
 					{
 						$username = $search_result['username'];
-						$firstname = $search_result['firstname'];
-						$lastname = $search_result['lastname'];
-						$pp_path = $search_result['profile_pic'];
-						$city = $search_result['city'];
-						$hometown = $search_result['hometown'];
-						$school = $search_result['school'];
-						$company = $search_result['company'];
-						
-						$posts .= "
+						if($username!=$uname)
+						{
+							$firstname = $search_result['firstname'];
+							$lastname = $search_result['lastname'];
+							$pp_path = $search_result['profile_pic'];
+							$city = $search_result['city'];
+							$hometown = $search_result['hometown'];
+							$school = $search_result['school'];
+							$company = $search_result['company'];
+							
+							$frnd = "Send Friend Request";
+							$check_frnd_sql = "SELECT * FROM friend where user= '$uname' AND friend_with= '$username' LIMIT 1";
+							$check_frnd_result = mysqli_query($conn,$check_frnd_sql);
+							$num_frnd_result = mysqli_num_rows($check_frnd_result);
+							
+							if($num_frnd_result == 1)
+							{
+								$frnd = "Friend";
+							}
+							
+							$check_frnd_sql = "SELECT * FROM friend_request where user_from = '$uname' AND user_to = '$username' LIMIT 1";
+							$check_frnd_result = mysqli_query($conn,$check_frnd_sql);
+							$num_frnd_result = mysqli_num_rows($check_frnd_result);
+							
+							if($num_frnd_result == 1)
+							{
+								$frnd = "Friend Request Sent";
+							}
+							
+							$posts .= "
 							<div class = 'resultarea fix'>
-								<img class = 'search_propic fix' src = 'user/user_profile_pic/".$pp_path."' height= '50px' width = '50px' alt = 'pro_pic' />
-								<span class = 'search_info fix'>
-								".$firstname." ".$lastname."<br/> 
-								".$hometown.", ".$city."
-								</span>
+								<a href = 'profile_others.php?u=".$username."'> <img class = 'search_propic fix' src = 'user/user_profile_pic/".$pp_path."' height= '80px' width = '80px' alt = 'pro_pic' /></a>
+								<div class = 'search_info fix'>
+									<a href = 'profile_others.php?u=".$username."'>".$firstname." ".$lastname."</a><br/> 
+									<b>Hometown: </b>".$hometown."<br/>
+									<b>Current city: </b>".$city." <br/>
+									<b>School: </b>".$school."<br/>
+									<b>Company: </b>".$company." <br/>
+								</div>
+								<div class='btn_search_per fix'>
+									<?php if( $frnd != 'Friend'){?>
+									<form action= 'frnd_req.php' method = 'POST'>
+										<input type = 'hidden' name = 'destination' value ='".$dest."'>
+										<input type = 'hidden' name = 'user_to' value ='".$username."'>
+										<input type= 'submit' name = 'frnd_req' class = 'frnd_send fix' value = '".$frnd."'/>
+									</form>
+								</div>
 							</div>
-						";
+							<?php } ?>
+							";
+						}
 						
 					}
 				}
@@ -83,6 +118,7 @@
 		<link rel="stylesheet" type="text/css" href="css/search.css">
 		<link rel="stylesheet" type="text/css" href="css/mainnav.css">
 		<link rel="stylesheet" type="text/css" href="css/leftnav.css">
+		<link rel="stylesheet" type="text/css" href="css/recentactivity.css">
 	</head>
 	
 	<body>
@@ -92,6 +128,9 @@
 			</div>
 			<div class="left_nav fix">
 				<?php include 'includes/leftnav.php'; ?>
+			</div>
+			<div class ="right_area fix">
+				<?php include 'includes/recentactivity.php'; ?>
 			</div>
 			<div class="middle_area fix">
 				<div class = "middle fix">

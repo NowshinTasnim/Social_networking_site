@@ -1,4 +1,4 @@
-*{margin:0px;padding: 0px;color: #007E33;font-family:"arial";font-size:20px;}
+*{margin:0px;padding: 0px;color: #007E33;font-family:"arial";font-size:20px;letter-spacing: .1rem;}
 .fix{overflow:hidden;}
 body{
 	height: 600px;
@@ -47,12 +47,12 @@ input{
 }
 
 .mid_var{
-	width:345px;
-	margin-left:500px;
+	width:375px;
+	margin-left:490px;
 }
 .rec_lab{
 	float:left;
-	width:120px;
+	width:130px;
 	height:30px;
 	margin-bottom:20px;
 }
@@ -77,7 +77,7 @@ input{
 
 .confirm_form>label{
 	float:left;
-	width:165px;
+	width:200px;
 	height:30px;
 	margin-bottom:20px;
 }

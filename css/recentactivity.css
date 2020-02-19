@@ -1,0 +1,31 @@
+*{margin:0px;padding: 0px;font-family:"arial";font-size:12px;letter-spacing: .1rem;}
+.fix{overflow:hidden;}
+body{
+	height: 600px;
+}
+.activity{
+	right: 30px;
+	margin-top:10px;
+	width: 385px;
+	position: fixed;
+}
+.activity_header{
+	height: 20px;
+	background-color: #007E33;
+	border-radius: 5px 5px 0px 0px;
+	color: white;
+	padding-left: 10px;
+	padding-top:4px;
+}
+
+.activity_body{
+	margin-top: 10px;
+}
+
+.per_activity{
+	background-color: #EEEBEB;
+	width: 385px;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+}
+

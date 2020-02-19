@@ -1,4 +1,4 @@
-*{margin:0px;padding: 0px;font-family:"arial";font-size:12px;}
+*{margin:0px;padding: 0px;font-family:"arial";font-size:12px;letter-spacing: .1rem;}
 
 .left{
 	height: 100%;
@@ -16,7 +16,7 @@
 .name{
 	float:right;
 	margin-top:35px;
-	margin-right:45px;
+	margin-right:35px;
 }
 .first_name{
 	font-weight:bold;

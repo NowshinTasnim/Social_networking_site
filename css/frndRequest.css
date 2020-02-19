@@ -6,26 +6,16 @@ body{
 
 .middle_area{
 	margin-left: 290px;
-	margin-top: 20px;
-	width: 607px;
+    margin-top: 20px;
+    width: 607px;
+    height: 597px;
     border-right: 1px solid #007E33;
 }
 
-.search_banner{
+.frnd_req_banner{
 	text-align:center;
 	font-weight: bold;
 	font-size: 16px;
-}
-
-.search_for{
-	font-weight: normal;
-	font-size: 16px;
-}
-
-.search_num{
-	margin-top:10px;
-	font-size: 14px;
-	margin-bottom: 30px;
 }
 
 .resultarea{
@@ -40,30 +30,35 @@ body{
 	color: black;
 }
 
-.search_propic{
+.sender_propic{
 	border-radius:60%;
 	float:left;
 }
 
-.search_info{
+.sender_info{
 	margin-left:100px;
 	margin-top: 4px;
 	font-size:14px;
 }
 
-.search_info>a{
+.sender_info>a{
 	text-decoration:none;
 	color: black;
 	font-size:14px;
 }
 
-.btn_search_per{
+.btn_sender_per{
 	float:right;
 	margin-top: -70px;
 	margin-right: 20px;
 }
 
-.frnd_send{
+.frnd_delete{
 	padding: 5px 20px;
 	
+}
+
+.frnd_send{
+	padding: 5px 20px;
+	margin-bottom: 10px;
 }
